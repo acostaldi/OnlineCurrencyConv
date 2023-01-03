@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Currency Converter</title>
+        <script src="workings.js"></script>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <h1><strong>Online Currency Converter</strong></h1>
+        <p>Welcome to my online currency converter tool!</p>
+        <div>
+          <label>Enter Api Key.</label>
+          <input type="text" name ="apiKey" id="apiKey">
+        </div> 
+        <p></p>
+          <div>
+            <label>Enter amount to be converted.</label>
+            <input type="number" name ="currAmount" id="currAmount">
+          </div> 
+        <div class="menu">
+            <button id="dropMenu" onclick="activeMenu()" class="dropBtn">Select Currency</button>
+            <div id="inDrop"class="dropdown-content">
+            <input type ="text" placeholder="..." id="searchInput" onkeyup="filterFunction()">
+            <a href="#USD" onclick=setCurr(1)>United States Dollar(USD)</a>
+            <a href="#EUR" onclick=setCurr(2)>Euro(EUR)</a>>
+            <a href="#CAD" onclick=setCurr(3)>Canadian Dollar(CAD)</a>>
+            <a href="#CHF" onclick=setCurr(4)>Swiss Franc(CHF)</a>>
+            <a href="#JPY" onclick=setCurr(5)>Japanese Yen(JPY)</a>>
+            <a href="#GBP" onclick=setCurr(6)>Pound Sterling(GBP)</a>>
+           </div>
+          </div>
+          <p>Converted to which currency?</p>
+        <div class="menu">
+          <button id="dropMenu1" onclick="activeMenu1()" class="dropBtn">Select Currency</button>
+          <div id="inDrop1"class="dropdown-content">
+          <input type ="text" placeholder="..." id="searchInput" onkeyup="filterFunction()">
+          <a href="#USD" onclick=setOutCurr(1)>United States Dollar(USD)</a>
+          <a href="#EUR" onclick=setOutCurr(2)>Euro(EUR)</a>>
+          <a href="#CAD" onclick=setOutCurr(3)>Canadian Dollar(CAD)</a>>
+          <a href="#CHF" onclick=setOutCurr(4)>Swiss Franc(CHF)</a>>
+          <a href="#JPY" onclick=setOutCurr(5)>Japanese Yen(JPY)</a>>
+          <a href="#GBP" onclick=setOutCurr(6)>Pound Sterling(GBP)</a>>
+          </div>
+        </div>
+        <button id="subBtn" onclick="convert()">Convert!</button>  
+      <p id="result1"></p>
+    </body>
+</html>
+
