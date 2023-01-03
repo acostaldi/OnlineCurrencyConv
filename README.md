@@ -5,3 +5,5 @@ using ApiLayer's Exchange Rate Data API https://apilayer.com/marketplace/exchang
 in order to fetch and convert currencies.
 
 Requires an Api Key in order to operate which can be acquired for free from the link above. 
+
+Page is hosted online at https://ltshrub.github.io/OnlineCurrencyConv/ if you want to try it for yourself.
